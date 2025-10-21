@@ -14,8 +14,4 @@ DynamoDB puede ser más adecuado en un sistema de comercio en linea global, como
 ## Casos de Estudio: 
 **Basándote en el material de referencia y tu propia investigación, menciona una aplicación del mundo real (ej: una red social, una plataforma de e-commerce) que utilice MongoDB y explica por qué su elección fue acertada.**
 
-Una de las aplicaciones que utiliza MongoDB es Uber ya que maneja garndes cantidades de datos y transacciones de manera eficiente, además de su alta felxibildiad para manejar distintos tipos de datos como ubicación o requisitos especificos del cliente. Otra de las ventajas que le ofrece es que permite tener multiples copias de los datos en distintos servidores, asi que en caso de que un servidor llegase a fallar, la aplicación sigue funcionando de manera correcta.
-
-
-
-
+Una de las aplicaciones que utiliza MongoDB es Uber ya que maneja garndes cantidades de datos y transacciones de manera eficiente, además de su alta felxibildiad para manejar distintos tipos de datos como ubicación o requisitos especificos del cliente. Otra de las ventajas que le ofrece es que permite tener multiples copias de los datos en distintos servidores, asi que en caso de que un servidor llegase a fallar, la aplicación sigue funcionando de manera correcta.  
