@@ -11,6 +11,3 @@ El objetivo con el que se lo realiza es para demostrar la flexibildiad de MongoD
 ![Captura del ingreso de datos](https://github.com/EdithChuico/mision-mongodb-EdithChuico/tree/782bd65825422fb42d34b14630f57bbf272c4794/imagenes/AgregarDatos.png)  
 **3.** Después de ello se revisan las colecciones agregadas  
 ![Coelcciones Agregadas](https://github.com/EdithChuico/mision-mongodb-EdithChuico/tree/782bd65825422fb42d34b14630f57bbf272c4794/imagenes/DatosAgregados.png)  
-
-
-
