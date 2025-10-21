@@ -59,7 +59,7 @@ descubierto_por: "Valka"
 }
 ]);
 
-// ============================  LECTURA (READ)  =====================================
+// ============================  LECTURA (READ)  ==============================================
 // Mostrar todas las criaturas del bestiario
 print("\n =================== CRIATURAS REGISTRADAS ========================");
 printjson(db.criaturas.find().toArray());
