@@ -1,0 +1,72 @@
+//===============INSERCIÓN DE GUARDIANES================================
+use("bestiario");
+db.guardianes.insertOne({
+    nombre: "Edith",
+    rango: "Gran Maestro",
+    password_acceso: "Edith1234",
+    nivel: 50,
+    inventario: [
+        {
+            nombre_item: "Veneno de Araña",
+            cantidad: 2
+        },
+        {
+            nombre_item: "Dulce de unicornio",
+            cantidad: 5
+        }
+    ],
+});
+//RESULTADO: El documento logró insertarse de manera correcta
+
+use("bestiario");
+db.guardianes.insertOne({
+    nombre: "Stefania",
+    rango: "Estudiante",
+    password_acceso: "stefi4",
+    nivel: 50,
+    inventario: [
+        {
+            nombre_item: "Veneno de Araña",
+            cantidad: 2
+        },
+        {
+            nombre_item: "Dulce de unicornio",
+            cantidad: 5
+        }
+    ],
+});
+//RESULTADO: Al ejecutar esta inserción indica el mensaje: Document failed validation, ya que el rango no es uno de los 3 establecidos y la contraseña no cumple con los caracteres establecidos
+
+//================INSERCIÓN DE CRIATURAS===========================
+use("bestiario");
+db.criaturas.insertOne({
+    nombre: "Chimuelo",
+    habitat: "Bosque",
+    nivel_peligro: 10,
+    es_legendaria: true,
+    habilidades: [
+        "Vuelo", "Visión Nocturna"
+    ],
+    ficha_veterinaria: {
+        salud: "óptima",
+        ultima_revision: new Date("2025-10-28")
+    },
+    id_guardian: ObjectId("69018d056bfe39f53b003dcb")//Se envia con ObjectId para mantener la integridad de los datos
+});
+//RESULTADO: Al ejecutarlo indica una inserción correcta
+
+use("bestiario");
+db.criaturas.insertOne({
+    nombre: "Furia Nocturna",
+    habitat: "Bosque",
+    nivel_peligro: 20,
+    es_legendaria: true,
+    habilidades: [
+    ],
+    ficha_veterinaria: {
+        salud: "óptima",
+        ultima_revision: new Date("2025-10-28")
+    },
+    id_guardian: ObjectId("69018d056bfe39f53b003dcb") //Se envia con ObjectId para mantener la integridad de los datos
+});
+//RESULTADO: Al ejecutar esta inserción indica el mensaje: Document failed validation, ya que el nivel de peligro supera el máximo aceptado, y el campo de habilidades se encuentra vacío
